@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dngyf4leq2k5w"]
+
+[ext_resource type="Script" path="res://Common/UI/Menu/Action button/action_button.gd" id="1_87l4m"]
+
+
+[node name="ActionButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_87l4m")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

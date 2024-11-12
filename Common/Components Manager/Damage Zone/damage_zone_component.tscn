@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dtv2bjicrkjyp"]
+
+[node name="DamageZoneComponent" type="Area2D"]
+collision_layer = 8
+collision_mask = 4

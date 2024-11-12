@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://deak4e86yj53a"]
+
+[ext_resource type="TileSet" uid="uid://civovct7m65nv" path="res://Utilities/TileMaps/default_tileset.tres" id="1_js017"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpkg1"]
+size = Vector2(15, 12)
+
+[node name="Spike" type="Node2D"]
+
+[node name="DealDamage" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 8
+
+[node name="TileMap" type="TileMap" parent="DealDamage"]
+tile_set = ExtResource("1_js017")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 851971, 12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DealDamage"]
+position = Vector2(7.5, -6)
+shape = SubResource("RectangleShape2D_xpkg1")
