@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt228k3b5y240"]
+
+[ext_resource type="Texture2D" uid="uid://c5xs0xsmpjo24" path="res://Entities/Objects/Rune/Assets/2-32x32.png" id="1_kl7ov"]
+[ext_resource type="Script" path="res://Entities/Objects/Rune/rune_dash.gd" id="1_ltflj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kob15"]
+radius = 16.0
+
+[sub_resource type="Gradient" id="Gradient_ewqm7"]
+colors = PackedColorArray(0.52549, 0.121569, 0.137255, 1, 0.121569, 0.00392157, 0.0156863, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sny8h"]
+gradient = SubResource("Gradient_ewqm7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yla7s"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_sny8h")
+
+[node name="RuneDash" type="Area2D"]
+script = ExtResource("1_ltflj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_kl7ov")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kob15")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(0, 16)
+emitting = false
+amount = 40
+process_material = SubResource("ParticleProcessMaterial_yla7s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

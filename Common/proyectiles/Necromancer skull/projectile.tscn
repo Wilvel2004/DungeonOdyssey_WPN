@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cstyhnwmtyvqs"]
+
+[ext_resource type="Script" path="res://Common/proyectiles/Necromancer skull/projectile.gd" id="1_andlo"]
+[ext_resource type="Texture2D" uid="uid://ded5kd371nnw6" path="res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png" id="1_w8tck"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nslel"]
+radius = 5.0
+
+[node name="projectile" type="Area2D"]
+collision_layer = 8
+collision_mask = 4
+script = ExtResource("1_andlo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w8tck")
+region_enabled = true
+region_rect = Rect2(1498.63, 578.065, 10.6609, 13.8796)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_nslel")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(0, 1)
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_screen_exited"]
