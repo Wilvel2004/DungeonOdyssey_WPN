@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731787049
+::res://::1731789709
 default_bus_layout.tres::AudioBusLayout::17371807231564699::1731435630::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1723015916::0::1::::<><>::
 README.md::TextFile::-1::1731436631::0::1::::<><>::
@@ -86,19 +86,25 @@ gui.tscn::PackedScene::8184422711010552721::1731435630::0::1::::<><>::res://Comm
 ::res://Config/::1723284944
 ::res://Entities/::1731435630
 ::res://Entities/Bosses/::1731787661
-::res://Entities/Bosses/Golem/::1731787665
+::res://Entities/Bosses/Golem/::1731790236
+Golem.tscn::PackedScene::41150729776065848::1731790262::0::1::::<><>::uid://bjios3vu6mbac::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png<>uid://cst21w44fh6eu::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn<>res://Common/States/FiniteStateMachine.gd<>res://Common/States/State.gd<>res://Entities/Bosses/Golem/States/Idle.gd<>res://Entities/Bosses/Golem/States/Follow.gd<>res://Entities/Bosses/Golem/MeleeAttack.gd<>res://Entities/Bosses/Golem/HomingMissile.gd
+MeleeAttack.gd::GDScript::-1::1731790236::0::1::::<>State<>::
+HomingMissile.gd::GDScript::-1::1731790259::0::1::::<>State<>::
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/::1731787600
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/::1604586065
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/ASE files/::1604660935
-::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/::1604660731
+::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/::1731787668
 Character_sheet.png::CompressedTexture2D::3035518984702193814::1604659525::1731787668::1::::<><>::
-::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/::1604661053
+::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/::1731787667
 arm_projectile.png::CompressedTexture2D::870939216032565489::1604574815::1731787667::1::::<><>::
 arm_projectile_glowing.png::CompressedTexture2D::8938076359534023358::1604661053::1731787667::1::::<><>::
 Laser_sheet.png::CompressedTexture2D::6077150721281793920::1604586026::1731787667::1::::<><>::
-::res://Entities/Bosses/Necromancer/::1731436922
+::res://Entities/Bosses/Golem/States/::1731789949
+Idle.gd::GDScript::-1::1731789907::0::1::::<>State<>::
+Follow.gd::GDScript::-1::1731789949::0::1::::<>State<>::
+::res://Entities/Bosses/Necromancer/::1731788964
 necromancer.gd::GDScript::-1::1731435630::0::1::::<>CharacterBody2D<>::
-necromancer.tscn::PackedScene::5180379866714424310::1731435630::0::1::::<><>::res://Entities/Bosses/Necromancer/necromancer.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png<>res://Common/States/FiniteStateMachine.gd<>res://Entities/Bosses/Necromancer/State Machine/Idle.gd<>res://Entities/Bosses/Necromancer/State Machine/Path.gd<>res://Entities/Bosses/Necromancer/State Machine/Summon.gd<>uid://dt85jpnul5xnn::::res://Entities/Enemies/Skeleton/skeleton.tscn<>res://Entities/Bosses/Necromancer/State Machine/Attack.gd<>uid://cstyhnwmtyvqs::::res://Common/proyectiles/Necromancer skull/projectile.tscn<>res://Entities/Bosses/Necromancer/State Machine/Death.gd<>uid://fk8t8w3u1uxw::::res://Common/Components Manager/Hurtbox/hurtbox_component.tscn<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn
+necromancer.tscn::PackedScene::5180379866714424310::1731788964::0::1::::<><>::res://Entities/Bosses/Necromancer/necromancer.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png<>res://Common/States/FiniteStateMachine.gd<>res://Entities/Bosses/Necromancer/State Machine/Idle.gd<>res://Entities/Bosses/Necromancer/State Machine/Path.gd<>res://Entities/Bosses/Necromancer/State Machine/Summon.gd<>uid://dt85jpnul5xnn::::res://Entities/Enemies/Skeleton/skeleton.tscn<>res://Entities/Bosses/Necromancer/State Machine/Attack.gd<>uid://cstyhnwmtyvqs::::res://Common/proyectiles/Necromancer skull/projectile.tscn<>res://Entities/Bosses/Necromancer/State Machine/Death.gd<>uid://fk8t8w3u1uxw::::res://Common/Components Manager/Hurtbox/hurtbox_component.tscn<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn
 Necromancer_creativekind-Sheet.png::CompressedTexture2D::7448050128929434055::1731435630::1731436922::1::::<><>::
 ::res://Entities/Bosses/Necromancer/State Machine/::1731435630
 Attack.gd::GDScript::-1::1731435630::0::1::::<>State<>::
@@ -242,8 +248,8 @@ level_2_2_1.tscn::PackedScene::5483702349097257762::1731435630::0::1::::<><>::ui
 ::res://Utilities/Player cshape/::1731435630
 player_crouching_cshape.tres::RectangleShape2D::2720783303349373880::1731435630::0::1::::<><>::
 player_standing_cshape.tres::RectangleShape2D::3747863889798197687::1731435630::0::1::::<><>::
-::res://Utilities/TileMaps/::1731435630
-default_tileset.tres::TileSet::5378591724765657151::1731435630::0::1::::<><>::uid://80oj4cb7u6g0::::res://Utilities/TileMaps/Foreground/Tileset_forest.png<>uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png<>uid://pp1qs2e1ljdd::::res://Utilities/TileMaps/Foreground/Trees.png<>uid://dw0c1y2tmk322::::res://Utilities/TileMaps/Foreground/other_and_decorative.png
+::res://Utilities/TileMaps/::1731787700
+default_tileset.tres::TileSet::5378591724765657151::1731787700::0::1::::<><>::uid://80oj4cb7u6g0::::res://Utilities/TileMaps/Foreground/Tileset_forest.png<>uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png<>uid://pp1qs2e1ljdd::::res://Utilities/TileMaps/Foreground/Trees.png<>uid://dw0c1y2tmk322::::res://Utilities/TileMaps/Foreground/other_and_decorative.png
 tile_map.tscn::PackedScene::1810967979090261498::1731435630::0::1::::<><>::uid://civovct7m65nv::::res://Utilities/TileMaps/default_tileset.tres
 ::res://Utilities/TileMaps/Background/::1731436922
 background.tscn::PackedScene::290754529012938674::1731435630::0::1::::<><>::uid://be1l1akna6dxk::::res://Utilities/TileMaps/Background/CloudsBack.png<>uid://cqaj5uyvr5vbh::::res://Utilities/TileMaps/Background/CloudsFront.png<>uid://d4kjdm4oho741::::res://Utilities/TileMaps/Background/BGBack.png<>uid://4xp6glf3ss0e::::res://Utilities/TileMaps/Background/BGFront.png

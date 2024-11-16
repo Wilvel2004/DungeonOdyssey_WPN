@@ -1,3 +1,11 @@
 res://Utilities/TileMaps/default_tileset.tres
 res://Entities/Bosses/Golem/Golem.tscn
 res://Entities/Bosses/Necromancer/necromancer.tscn
+res://Entities/Bosses/Golem/States/Idle.gd
+res://Entities/Bosses/Golem/States/Follow.gd
+res://Entities/Bosses/Golem/MeleeAttack.gd
+res://Entities/Bosses/Golem/HomingMissile.gd
+res://Entities/Bosses/Golem/LaserBeam.gd
+res://Entities/Bosses/Golem/ArmorBuff.gd
+res://Entities/Bosses/Golem/Dash.gd
+res://Entities/Bosses/Golem/Death.gd
