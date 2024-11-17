@@ -9,12 +9,12 @@ func enter():
 	can_transition = true
  
 func dash():
-	var tween = create_tween()
-	tween.tween_property(owner, "position", player.position, 0.8)
-	await tween.finished
+	var dir_to_player = owner.global_position.direction_to(player.global_position) * owner.movement_component.speed
+	owner.velocity.x = dir_to_player.x
+	owner.dir.x = sign(owner.velocity.x)
+	owner.movement_component.move(owner.dir, owner)
  
 func transition():
 	if can_transition:
 		can_transition = false
- 
 		get_parent().change_state("Follow")

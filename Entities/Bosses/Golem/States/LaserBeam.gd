@@ -1,6 +1,6 @@
 extends State
  
-@onready var pivot = $"../../Pivot"
+@onready var pivot = $"../../pivot"
 var can_transition: bool = false
  
 func enter():
@@ -19,4 +19,4 @@ func set_target():
 func transition():
 	if can_transition:
 		can_transition = false
-		get_parent().change_state("Dash")
+		get_parent().change_state("Follow")

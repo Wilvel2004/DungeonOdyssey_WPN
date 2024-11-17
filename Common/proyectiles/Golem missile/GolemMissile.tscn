@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://dljcomqc7sghk"]
+
+[ext_resource type="Texture2D" uid="uid://d0lw2un5pj65o" path="res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/arm_projectile_glowing.png" id="1_0tlgp"]
+[ext_resource type="Script" path="res://Common/proyectiles/Golem missile/GolemMissile.gd" id="1_8mxj4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tayja"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6coav"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqd6y"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmykj"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlccc"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uer53"]
+atlas = ExtResource("1_0tlgp")
+region = Rect2(200, 100, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hcpgq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tayja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6coav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqd6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmykj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlccc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uer53")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c5qdd"]
+size = Vector2(34, 20)
+
+[node name="GolemMissile" type="Area2D"]
+script = ExtResource("1_8mxj4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hcpgq")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, -12)
+shape = SubResource("RectangleShape2D_c5qdd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

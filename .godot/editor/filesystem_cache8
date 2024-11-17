@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731789709
+::res://::1731852564
 default_bus_layout.tres::AudioBusLayout::17371807231564699::1731435630::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1723015916::0::1::::<><>::
 README.md::TextFile::-1::1731436631::0::1::::<><>::
@@ -34,14 +34,17 @@ door.tscn::PackedScene::4478757777846968219::1731435630::0::1::::<><>::res://Com
 ext_door.tscn::PackedScene::2846598802681512656::1731435630::0::1::::<><>::res://Common/Navegation/portal.gd
 navigation_manager.gd::GDScript::-1::1731435678::0::1::::<>Node<>::
 portal.gd::GDScript::-1::1731435630::0::1::::Door<>Area2D<>::
-::res://Common/proyectiles/::1731435630
+::res://Common/proyectiles/::1731791731
 ::res://Common/proyectiles/Fire ball/::1731436922
 fire_ball.gd::GDScript::-1::1731435630::0::1::::FireBall<>Area2D<>::
 fire_ball.tscn::PackedScene::808887447438869443::1731435630::0::1::::<><>::uid://b4nj2ucputqxn::::res://Common/proyectiles/Fire ball/Move.png<>res://Common/proyectiles/Fire ball/fire_ball.gd
 Move.png::CompressedTexture2D::4449329783634783507::1731435630::1731436922::1::::<><>::
-::res://Common/proyectiles/Necromancer skull/::1731435630
-projectile.gd::GDScript::-1::1731435630::0::1::::Projectile<>Area2D<>::
-projectile.tscn::PackedScene::6076934155942482806::1731435630::0::1::::<><>::res://Common/proyectiles/Necromancer skull/projectile.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png
+::res://Common/proyectiles/Golem missile/::1731792535
+GolemMissile.gd::GDScript::-1::1731792410::0::1::::<>Area2D<>::
+GolemMissile.tscn::PackedScene::7950065821115819488::1731792535::0::1::::<><>::uid://d0lw2un5pj65o::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/arm_projectile_glowing.png<>res://Common/proyectiles/Golem missile/GolemMissile.gd
+::res://Common/proyectiles/Necromancer skull/::1731792535
+projectile.gd::GDScript::-1::1731792345::0::1::::Projectile<>Area2D<>::
+projectile.tscn::PackedScene::6076934155942482806::1731792535::0::1::::<><>::res://Common/proyectiles/Necromancer skull/projectile.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png
 ::res://Common/States/::1731435630
 FiniteStateMachine.gd::GDScript::-1::1731435630::0::1::::FiniteStateMachine<>Node<>::
 State.gd::GDScript::-1::1731435630::0::1::::State<>Node<>::
@@ -86,10 +89,9 @@ gui.tscn::PackedScene::8184422711010552721::1731435630::0::1::::<><>::res://Comm
 ::res://Config/::1723284944
 ::res://Entities/::1731435630
 ::res://Entities/Bosses/::1731787661
-::res://Entities/Bosses/Golem/::1731790236
-Golem.tscn::PackedScene::41150729776065848::1731790262::0::1::::<><>::uid://bjios3vu6mbac::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png<>uid://cst21w44fh6eu::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn<>res://Common/States/FiniteStateMachine.gd<>res://Common/States/State.gd<>res://Entities/Bosses/Golem/States/Idle.gd<>res://Entities/Bosses/Golem/States/Follow.gd<>res://Entities/Bosses/Golem/MeleeAttack.gd<>res://Entities/Bosses/Golem/HomingMissile.gd
-MeleeAttack.gd::GDScript::-1::1731790236::0::1::::<>State<>::
-HomingMissile.gd::GDScript::-1::1731790259::0::1::::<>State<>::
+::res://Entities/Bosses/Golem/::1731792534
+Golem.gd::GDScript::-1::1731791498::0::1::::<>CharacterBody2D<>::
+Golem.tscn::PackedScene::41150729776065848::1731792534::0::1::::<><>::res://Entities/Bosses/Golem/Golem.gd<>uid://bjios3vu6mbac::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png<>uid://cst21w44fh6eu::::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn<>res://Common/States/FiniteStateMachine.gd<>res://Entities/Bosses/Golem/States/Idle.gd<>res://Entities/Bosses/Golem/States/Follow.gd<>res://Entities/Bosses/Golem/States/MeleeAttack.gd<>res://Entities/Bosses/Golem/States/HomingMissile.gd<>res://Entities/Bosses/Golem/States/LaserBeam.gd<>uid://dljcomqc7sghk::::res://Common/proyectiles/Golem missile/GolemMissile.tscn<>res://Entities/Bosses/Golem/States/ArmorBuff.gd<>res://Entities/Bosses/Golem/States/Dash.gd<>res://Entities/Bosses/Golem/States/Death.gd<>uid://ba60qronxqsgq::::res://Common/Components Manager/Hitbox/hitbox_component.tscn
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/::1731787600
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/::1604586065
 ::res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/ASE files/::1604660935
@@ -99,12 +101,18 @@ Character_sheet.png::CompressedTexture2D::3035518984702193814::1604659525::17317
 arm_projectile.png::CompressedTexture2D::870939216032565489::1604574815::1731787667::1::::<><>::
 arm_projectile_glowing.png::CompressedTexture2D::8938076359534023358::1604661053::1731787667::1::::<><>::
 Laser_sheet.png::CompressedTexture2D::6077150721281793920::1604586026::1731787667::1::::<><>::
-::res://Entities/Bosses/Golem/States/::1731789949
-Idle.gd::GDScript::-1::1731789907::0::1::::<>State<>::
+::res://Entities/Bosses/Golem/States/::1731792515
+ArmorBuff.gd::GDScript::-1::1731790839::0::1::::<>State<>::
+Dash.gd::GDScript::-1::1731790925::0::1::::<>State<>::
+Death.gd::GDScript::-1::1731790985::0::1::::<>State<>::
 Follow.gd::GDScript::-1::1731789949::0::1::::<>State<>::
-::res://Entities/Bosses/Necromancer/::1731788964
+HomingMissile.gd::GDScript::-1::1731790259::0::1::::<>State<>::
+Idle.gd::GDScript::-1::1731789907::0::1::::<>State<>::
+LaserBeam.gd::GDScript::-1::1731792515::0::1::::<>State<>::
+MeleeAttack.gd::GDScript::-1::1731790236::0::1::::<>State<>::
+::res://Entities/Bosses/Necromancer/::1731791650
 necromancer.gd::GDScript::-1::1731435630::0::1::::<>CharacterBody2D<>::
-necromancer.tscn::PackedScene::5180379866714424310::1731788964::0::1::::<><>::res://Entities/Bosses/Necromancer/necromancer.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png<>res://Common/States/FiniteStateMachine.gd<>res://Entities/Bosses/Necromancer/State Machine/Idle.gd<>res://Entities/Bosses/Necromancer/State Machine/Path.gd<>res://Entities/Bosses/Necromancer/State Machine/Summon.gd<>uid://dt85jpnul5xnn::::res://Entities/Enemies/Skeleton/skeleton.tscn<>res://Entities/Bosses/Necromancer/State Machine/Attack.gd<>uid://cstyhnwmtyvqs::::res://Common/proyectiles/Necromancer skull/projectile.tscn<>res://Entities/Bosses/Necromancer/State Machine/Death.gd<>uid://fk8t8w3u1uxw::::res://Common/Components Manager/Hurtbox/hurtbox_component.tscn<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn
+necromancer.tscn::PackedScene::5180379866714424310::1731791650::0::1::::<><>::res://Entities/Bosses/Necromancer/necromancer.gd<>uid://ded5kd371nnw6::::res://Entities/Bosses/Necromancer/Necromancer_creativekind-Sheet.png<>res://Common/States/FiniteStateMachine.gd<>res://Entities/Bosses/Necromancer/State Machine/Idle.gd<>res://Entities/Bosses/Necromancer/State Machine/Path.gd<>res://Entities/Bosses/Necromancer/State Machine/Summon.gd<>uid://dt85jpnul5xnn::::res://Entities/Enemies/Skeleton/skeleton.tscn<>res://Entities/Bosses/Necromancer/State Machine/Attack.gd<>uid://cstyhnwmtyvqs::::res://Common/proyectiles/Necromancer skull/projectile.tscn<>res://Entities/Bosses/Necromancer/State Machine/Death.gd<>uid://fk8t8w3u1uxw::::res://Common/Components Manager/Hurtbox/hurtbox_component.tscn<>uid://ghy8pjbc2bob::::res://Common/UI/Bosses health bar/health meter-43.png<>uid://s8q30hdyo6nb::::res://Common/UI/Bosses health bar/health meter-45.png<>uid://dc2j6t3nvqnml::::res://Common/Components Manager/Player Dectection/player_detection_component.tscn
 Necromancer_creativekind-Sheet.png::CompressedTexture2D::7448050128929434055::1731435630::1731436922::1::::<><>::
 ::res://Entities/Bosses/Necromancer/State Machine/::1731435630
 Attack.gd::GDScript::-1::1731435630::0::1::::<>State<>::
@@ -236,13 +244,13 @@ level_1_3.tscn::PackedScene::1545059295415929887::1731435630::0::1::::<><>::res:
 level_1_4.tscn::PackedScene::1499261708163051631::1731435630::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://cf2odncnku1mw::::res://Entities/Bosses/Necromancer/necromancer.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn
 level_1_5.tscn::PackedScene::1861977392573708348::1731435630::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://deak4e86yj53a::::res://Entities/Trap/spike.tscn<>uid://cuvi0cnd5knda::::res://Entities/Trap/spike_reverse.tscn<>uid://dc3bkkq5ynign::::res://Entities/Plataforms/Static/static_platform.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn<>uid://cfm18biaic6rd::::res://Common/UI/Advice/advice.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn
 level_1_6.tscn::PackedScene::7598074973995943140::1731435630::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn<>uid://di0g34cf8fao::::res://Common/Navegation/dimensional_portal.tscn<>uid://cd0em0ab4eqxe::::res://Entities/Enemies/Human MA/human_martial_arts.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn
-::res://Stages/Zone 2/::1731435678
+::res://Stages/Zone 2/::1731792534
 level_2.tscn::PackedScene::3261307237993718045::1731435630::0::1::::<><>::uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>res://Stages/level.gd<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://cd8iuafvobh33::::res://Entities/Plataforms/Moving/moving_plataform.tscn<>uid://dc3bkkq5ynign::::res://Entities/Plataforms/Static/static_platform.tscn<>uid://di0g34cf8fao::::res://Common/Navegation/dimensional_portal.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn
-level_2_1.tscn::PackedScene::2663086860316811134::1731435678::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
-level_2_1_1.tscn::PackedScene::3533018474884486430::1731435678::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
+level_2_1.tscn::PackedScene::2663086860316811134::1731791651::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
+level_2_1_1.tscn::PackedScene::3533018474884486430::1731791650::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
 level_2_1_2.tscn::PackedScene::8756143172820953310::1731435678::0::1::::<><>::uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>res://Stages/level.gd<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
 level_2_1_3.tscn::PackedScene::7653387970939400967::1731435678::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
-level_2_2.tscn::PackedScene::2892258432851986177::1731435630::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
+level_2_2.tscn::PackedScene::2892258432851986177::1731792534::0::1::::<><>::res://Stages/level.gd<>uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://bgs6ci0jf17ge::::res://Common/Navegation/ext_door.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn<>uid://t60m7yp3hns::::res://Entities/Bosses/Golem/Golem.tscn
 level_2_2_1.tscn::PackedScene::5483702349097257762::1731435630::0::1::::<><>::uid://02im4ac7brwc::::res://Utilities/TileMaps/tile_map.tscn<>res://Stages/level.gd<>uid://cn23xv88qihmd::::res://Entities/Player/player.tscn<>uid://dpqsdax7d1tnu::::res://Common/UI/Menu/Pause Menu/pause_menu.tscn<>uid://b42sqsdovegl4::::res://Common/Navegation/door.tscn
 ::res://Utilities/::1731435630
 ::res://Utilities/Player cshape/::1731435630

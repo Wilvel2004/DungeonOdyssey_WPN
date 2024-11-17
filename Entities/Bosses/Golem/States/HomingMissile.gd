@@ -18,4 +18,4 @@ func shoot():
 func transition():
 	if can_transition:
 		can_transition = false
-		get_parent().change_state("Dash")
+		get_parent().change_state("Follow")

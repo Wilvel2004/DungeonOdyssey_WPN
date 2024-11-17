@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhhbcrlu1koij"]
+[gd_scene load_steps=8 format=3 uid="uid://bhhbcrlu1koij"]
 
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_16xcp"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="1_id8cr"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="3_g30xs"]
 [ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/ext_door.tscn" id="4_8y216"]
 [ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="5_0fa54"]
+[ext_resource type="PackedScene" uid="uid://t60m7yp3hns" path="res://Entities/Bosses/Golem/Golem.tscn" id="7_nq4mb"]
 
 [node name="Level_2_1_1" type="Node2D"]
 script = ExtResource("1_16xcp")
@@ -21,7 +22,7 @@ layer_4/tile_data = PackedInt32Array(-2293776, 1245185, 46, -2228240, 1245185, 4
 limit_left = -128
 limit_top = -671
 limit_right = 960
-limit_bottom = 15
+limit_bottom = 115
 
 [node name="UIPauseMenu" parent="." instance=ExtResource("3_g30xs")]
 
@@ -42,6 +43,9 @@ destination_door_tag = "E"
 
 [node name="Spawn" parent="Doors/Door_E" index="1"]
 position = Vector2(-56, 16)
+
+[node name="Golem" parent="." instance=ExtResource("7_nq4mb")]
+position = Vector2(283, -51)
 
 [editable path="Player"]
 [editable path="Doors/Door_W"]
