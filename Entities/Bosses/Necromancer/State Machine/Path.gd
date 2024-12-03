@@ -5,12 +5,22 @@ var tp_dir : bool = true
 var teleport_count : int = 0
 var max_teleports : int = 2
 
+func _enter_tree():
+	randomize()
+
 func enter():
 	super.enter()
 	can_transition = false
 	
 	animation_player.play("skill")
 	await animation_player.animation_finished
+	
+	if owner.health >= 150:
+		animation_player.play("idle")
+		await  get_tree().create_timer(1.0).timeout
+	else:
+		animation_player.play("idle")
+		await  get_tree().create_timer(0.5).timeout
 	
 	can_transition = true
 
@@ -27,9 +37,10 @@ func teleport():
 		teleport_count = 0  
 
 func transition():
-	var distance = owner.direction.length()
 	if can_transition:
-		if distance < 50:
-			get_parent().change_state("Summon")
-		elif distance > 130:
-			get_parent().change_state("Attack")
+		var chance = randi() % 2
+		match  chance:
+			0:
+				get_parent().change_state("Summon")
+			1:
+				get_parent().change_state("Attack")
