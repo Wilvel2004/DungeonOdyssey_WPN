@@ -45,7 +45,7 @@ func _on_hitbox_component_area_entered(area):
 	if area == PlayerData.heavy_attack_zone:
 		health -= PlayerData.heavy_attack_damage - DEF
 	
-	if area.name == "projectile":
+	if area.name == "GolemMissile":
 		health -= 20 - DEF
 
 

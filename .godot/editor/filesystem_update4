@@ -13,3 +13,5 @@ res://Entities/Bosses/Necromancer/State Machine/Attack.gd
 res://Entities/Bosses/Golem/Golem.gd
 res://Entities/Player/Scripts/Player.gd
 res://Common/proyectiles/Golem missile/GolemMissile.tscn
+res://Common/proyectiles/Golem missile/GolemMissile.gd
+res://Common/proyectiles/Fire ball/fire_ball.tscn
