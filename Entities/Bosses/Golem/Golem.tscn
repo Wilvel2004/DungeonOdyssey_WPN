@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://t60m7yp3hns"]
+[gd_scene load_steps=36 format=3 uid="uid://t60m7yp3hns"]
 
 [ext_resource type="Script" path="res://Entities/Bosses/Golem/Golem.gd" id="1_5nq7s"]
 [ext_resource type="Texture2D" uid="uid://bjios3vu6mbac" path="res://Entities/Bosses/Golem/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png" id="1_radf2"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://Entities/Bosses/Golem/States/ArmorBuff.gd" id="12_oavcv"]
 [ext_resource type="Script" path="res://Entities/Bosses/Golem/States/Death.gd" id="14_7o6d2"]
 [ext_resource type="PackedScene" uid="uid://ba60qronxqsgq" path="res://Common/Components Manager/Hitbox/hitbox_component.tscn" id="15_18kqw"]
+[ext_resource type="PackedScene" uid="uid://dtv2bjicrkjyp" path="res://Common/Components Manager/Damage Zone/damage_zone_component.tscn" id="17_sbnxd"]
 
 [sub_resource type="Animation" id="Animation_3sxng"]
 length = 0.001
@@ -42,6 +43,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GolemDealDamage/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_j8hjg"]
@@ -187,6 +200,18 @@ tracks/1/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GolemDealDamage/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_tucp7"]
 resource_name = "laser"
@@ -275,6 +300,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GolemDealDamage/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_rkbev"]
@@ -366,6 +403,9 @@ radius = 174.046
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d5oxb"]
 radius = 23.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t76jk"]
+size = Vector2(13.5, 20)
 
 [node name="Golem" type="CharacterBody2D"]
 collision_layer = 0
@@ -460,6 +500,12 @@ script = ExtResource("14_7o6d2")
 position = Vector2(100, -1)
 texture = ExtResource("2_u8y6j")
 vframes = 15
+
+[node name="GolemDealDamage" parent="." instance=ExtResource("17_sbnxd")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GolemDealDamage"]
+position = Vector2(-21.25, 5)
+shape = SubResource("RectangleShape2D_t76jk")
 
 [connection signal="body_entered" from="PlayerDetection" to="FiniteStateMachine/Idle" method="_on_player_detection_body_entered"]
 [connection signal="area_entered" from="HitboxComponent" to="." method="_on_hitbox_component_area_entered"]

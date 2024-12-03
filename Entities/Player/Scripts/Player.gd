@@ -304,3 +304,7 @@ func _on_interaction_area_entered(area):
 		take_damage(2)
 	elif area.name == "FireBall" and can_take_damage:
 		take_damage(1)
+	elif area.name == "GolemDealDamage" and can_take_damage:
+		take_damage(3)
+	elif area.name == "GolemMissile" and can_take_damage:
+		take_damage(1)

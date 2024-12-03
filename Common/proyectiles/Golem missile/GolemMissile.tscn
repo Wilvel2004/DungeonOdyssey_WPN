@@ -57,6 +57,8 @@ animations = [{
 size = Vector2(34, 20)
 
 [node name="GolemMissile" type="Area2D"]
+collision_layer = 8
+collision_mask = 4
 script = ExtResource("1_8mxj4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

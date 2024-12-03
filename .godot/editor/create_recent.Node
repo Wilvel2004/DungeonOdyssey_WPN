@@ -1,6 +1,6 @@
+CollisionShape2D
 Node2D
 Node
-CollisionShape2D
 AnimatedSprite2D
 Area2D
 AnimationPlayer
