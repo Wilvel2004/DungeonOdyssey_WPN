@@ -16,4 +16,10 @@ func enter():
 	var rune_dash = rune.instantiate()
 	rune_dash.position = owner.position
 	get_tree().current_scene.call_deferred("add_child",rune_dash)
+	
+	block_door1.set_collision_layer_value(1,false)
+	block_door1.set_collision_mask_value(1,false)
+	block_door2.set_collision_layer_value(1,false)
+	block_door2.set_collision_mask_value(1,false)
+	
 	owner.queue_free()
