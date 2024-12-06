@@ -12,3 +12,4 @@ res://Common/proyectiles/Fire ball/fire_ball.tscn
 res://Entities/Bosses/Necromancer/necromancer.tscn
 res://Entities/Bosses/Necromancer/State Machine/Death.gd
 res://Entities/Bosses/Golem/Golem.gd
+res://Common/proyectiles/Golem missile/GolemMissile.gd

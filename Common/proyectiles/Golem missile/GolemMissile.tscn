@@ -63,7 +63,7 @@ collision_mask = 4
 script = ExtResource("1_8mxj4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(23, -11)
+position = Vector2(-32, -11)
 sprite_frames = SubResource("SpriteFrames_hcpgq")
 autoplay = "default"
 
