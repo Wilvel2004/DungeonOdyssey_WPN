@@ -28,7 +28,5 @@ func shoot():
 	get_tree().current_scene.add_child(bullet)
 
 func transition():
-	if can_transition and owner.direction.length() >= 100:
-		get_parent().change_state("Attack")
-	if can_transition and owner.direction.length() < 100:
+	if  can_transition:
 		get_parent().change_state("Teleport")

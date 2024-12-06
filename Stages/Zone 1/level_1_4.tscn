@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://vmivehejskol"]
+[gd_scene load_steps=14 format=3 uid="uid://vmivehejskol"]
 
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_xuwoh"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_gsogs"]
@@ -6,6 +6,35 @@
 [ext_resource type="PackedScene" uid="uid://cf2odncnku1mw" path="res://Entities/Bosses/Necromancer/necromancer.tscn" id="4_w4tgp"]
 [ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="5_0x2v8"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="6_h0qea"]
+[ext_resource type="Texture2D" uid="uid://deyihhp88jkqq" path="res://Assets/VFX/Flame.png" id="7_yolhf"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g3sej"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_4cp7r"]
+offsets = PackedFloat32Array(0.0737705, 0.237705, 0.786885, 0.918033)
+colors = PackedColorArray(1, 1, 1, 0, 0, 0, 0, 1, 1, 0.843137, 0, 1, 1, 0.843137, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kakxg"]
+gradient = SubResource("Gradient_4cp7r")
+width = 100
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j8em8"]
+direction = Vector3(0, -1, 0)
+spread = 0.0
+initial_velocity_min = 250.0
+initial_velocity_max = 250.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.0
+scale_max = 0.5
+color = Color(0.717647, 0.717647, 0.717647, 1)
+color_ramp = SubResource("GradientTexture1D_kakxg")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twin7"]
+size = Vector2(17.5, 62.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qpmy3"]
+size = Vector2(19, 58.5)
 
 [node name="level_1_4" type="Node2D"]
 script = ExtResource("1_xuwoh")
@@ -32,7 +61,7 @@ position = Vector2(342, -74)
 [node name="Doors" type="Node" parent="."]
 
 [node name="Door_E" parent="Doors" instance=ExtResource("5_0x2v8")]
-position = Vector2(-18, -44)
+position = Vector2(-19, -42)
 destination_level_tag = "level_1_3"
 destination_door_tag = "W"
 
@@ -43,7 +72,7 @@ position = Vector2(10, 12)
 position = Vector2(50, 36)
 
 [node name="Door_W" parent="Doors" instance=ExtResource("5_0x2v8")]
-position = Vector2(696, -29)
+position = Vector2(698, -28)
 destination_level_tag = "level_1_5"
 destination_door_tag = "E"
 spawn_direction = "left"
@@ -53,6 +82,39 @@ position = Vector2(-32, 21)
 
 [node name="UIPauseMenu" parent="." instance=ExtResource("6_h0qea")]
 
+[node name="Particles1" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_g3sej")
+position = Vector2(-9, 24)
+emitting = false
+amount = 14
+process_material = SubResource("ParticleProcessMaterial_j8em8")
+texture = ExtResource("7_yolhf")
+metadata/_edit_group_ = true
+
+[node name="Particles2" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_g3sej")
+position = Vector2(698, 16)
+emitting = false
+amount = 14
+process_material = SubResource("ParticleProcessMaterial_j8em8")
+texture = ExtResource("7_yolhf")
+metadata/_edit_group_ = true
+
+[node name="S1" type="StaticBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="Block_door1" type="CollisionShape2D" parent="S1"]
+position = Vector2(-8.75, -32.75)
+shape = SubResource("RectangleShape2D_twin7")
+
+[node name="S2" type="StaticBody2D" parent="."]
+
+[node name="Block_door2" type="CollisionShape2D" parent="S2"]
+position = Vector2(697, -29)
+shape = SubResource("RectangleShape2D_qpmy3")
+
 [editable path="Player"]
+[editable path="Necromancer"]
 [editable path="Doors/Door_E"]
 [editable path="Doors/Door_W"]
