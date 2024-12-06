@@ -16,3 +16,9 @@ func transition():
  
 func _on_player_detection_body_entered(body):
 	player_entered = true
+	particles1.emitting = true
+	particles2.emitting = true
+	block_door1.set_collision_layer_value(1,true)
+	block_door1.set_collision_mask_value(1,true)
+	block_door2.set_collision_layer_value(1,true)
+	block_door2.set_collision_mask_value(1,true)

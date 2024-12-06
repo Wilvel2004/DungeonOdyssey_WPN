@@ -4,7 +4,8 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D
 @onready var progress_bar = $UI/HealthBar
 @onready var vfx = $VFX
- 
+@onready var dealdamage = $GolemDealDamage/CollisionShape2D 
+
 var direction : Vector2
 var DEF = 0
  
@@ -31,8 +32,10 @@ func _process(_delta):
  
 	if direction.x < 0:
 		sprite.flip_h = true
+		dealdamage.position.x = -20
 	else:
 		sprite.flip_h = false
+		dealdamage.position.x = 20
 
 func _physics_process(delta):
 	velocity = direction.normalized() * 40
