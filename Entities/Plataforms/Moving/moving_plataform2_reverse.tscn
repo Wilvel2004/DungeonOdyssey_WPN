@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd8iuafvobh33"]
+[gd_scene load_steps=6 format=3 uid="uid://35x4wpycmxkh"]
 
-[ext_resource type="Texture2D" uid="uid://cnrbqr3ucdgy8" path="res://Utilities/TileMaps/Foreground/main_lev_build.png" id="1_cf6ga"]
+[ext_resource type="Texture2D" uid="uid://cnrbqr3ucdgy8" path="res://Utilities/TileMaps/Foreground/main_lev_build.png" id="1_4akut"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3dad"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m45to"]
 size = Vector2(64, 16)
 
 [sub_resource type="Animation" id="Animation_n6ex5"]
@@ -31,7 +31,7 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 2, 4),
+"times": PackedFloat32Array(0.1, 2, 3.3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(224, 0), Vector2(0, 0)]
@@ -43,20 +43,20 @@ _data = {
 "move_loop": SubResource("Animation_wwpmr")
 }
 
-[node name="MovingPlatform" type="Node2D"]
+[node name="moving_plataform_reverse" type="Node2D"]
 
-[node name="Platform" type="AnimatableBody2D" parent="."]
+[node name="Platform2" type="AnimatableBody2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Platform"]
-texture = ExtResource("1_cf6ga")
+[node name="Sprite2D" type="Sprite2D" parent="Platform2"]
+texture = ExtResource("1_4akut")
 region_enabled = true
 region_rect = Rect2(240, 464, 64, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
-shape = SubResource("RectangleShape2D_y3dad")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+shape = SubResource("RectangleShape2D_m45to")
 one_way_collision = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2"]
 libraries = {
 "": SubResource("AnimationLibrary_ypjw5")
 }
