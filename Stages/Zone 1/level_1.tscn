@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmnksxjwnedqn"]
+[gd_scene load_steps=8 format=3 uid="uid://bmnksxjwnedqn"]
 
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_thkra"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_ji60a"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="4_ykp2c"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="5_y1nvc"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="6_vl713"]
+[ext_resource type="PackedScene" uid="uid://dtb30qdt4ho52" path="res://Entities/Objects/Coin/coin.tscn" id="7_bmii5"]
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_thkra")
@@ -53,6 +54,32 @@ text = "Usa las flechas para moverte (← ↑ →)"
 position = Vector2(-233, 0)
 
 [node name="UIPauseMenu" parent="." instance=ExtResource("6_vl713")]
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(456, -29)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(472, -29)
+
+[node name="Coin3" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(488, -29)
+
+[node name="Coin4" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(504, -29)
+
+[node name="Coin5" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(456, -96)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(472, -96)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(488, -96)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("7_bmii5")]
+position = Vector2(504, -96)
 
 [editable path="Doors/Door_W"]
 [editable path="Player"]

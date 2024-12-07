@@ -38,7 +38,7 @@ func _process(_delta):
 		dealdamage.position.x = 20
 
 func _physics_process(delta):
-	velocity = direction.normalized() * 40
+	velocity = direction.normalized() * 80
 	move_and_collide(velocity * delta)
 
 func _on_hitbox_component_area_entered(area):

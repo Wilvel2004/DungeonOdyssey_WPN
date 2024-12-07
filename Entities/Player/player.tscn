@@ -853,14 +853,14 @@ libraries = {
 autoplay = "idle"
 
 [node name="CrouchRayCast_1" type="RayCast2D" parent="."]
-visible = false
-position = Vector2(-6, -8)
+position = Vector2(-7, -14)
 target_position = Vector2(0, -25)
+collision_mask = 3
 
 [node name="CrouchRayCast_2" type="RayCast2D" parent="."]
-visible = false
-position = Vector2(9, -8)
+position = Vector2(8, -14)
 target_position = Vector2(0, -25)
+collision_mask = 3
 
 [node name="AttackArea2D" type="Area2D" parent="."]
 position = Vector2(-1, 0)
