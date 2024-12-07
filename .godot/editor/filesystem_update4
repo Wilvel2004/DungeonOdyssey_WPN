@@ -16,3 +16,5 @@ res://Entities/Plataforms/Static/static_platform.tscn
 res://Entities/Plataforms/Static/static_plataform2.tscn
 res://Entities/Player/player.tscn
 res://Entities/Player/Scripts/Player.gd
+res://Stages/Zone 1/level_1.tscn
+res://Entities/Player/Scripts/player_data.gd
