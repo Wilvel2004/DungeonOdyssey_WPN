@@ -23,7 +23,7 @@ blend_mode = 1
 offsets = PackedFloat32Array(0.0737705, 0.237705, 0.786885, 0.918033)
 colors = PackedColorArray(1, 1, 1, 0, 0, 0, 0, 1, 1, 0.843137, 0, 1, 1, 0.843137, 0, 0)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_kra4g"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_hmt58"]
 gradient = SubResource("Gradient_rkii8")
 width = 100
 
@@ -36,7 +36,7 @@ gravity = Vector3(0, 0, 0)
 scale_min = 0.0
 scale_max = 0.5
 color = Color(0.717647, 0.717647, 0.717647, 1)
-color_ramp = SubResource("GradientTexture1D_kra4g")
+color_ramp = SubResource("GradientTexture1D_hmt58")
 
 [node name="Level_2_1_1" type="Node2D"]
 script = ExtResource("1_16xcp")

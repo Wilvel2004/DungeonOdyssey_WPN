@@ -8,3 +8,7 @@ res://Entities/Bosses/Golem/Golem.gd
 res://Entities/Plataforms/Moving/moving_plataform2_reverse.tscn
 res://Stages/Zone 2/level_2.tscn
 res://Entities/Plataforms/Moving/moving_plataform.tscn
+res://Stages/Zone 2/level_2_1.tscn
+res://Stages/Zone 2/level_2_1_1.tscn
+res://Stages/Zone 2/level_2_1_2.tscn
+res://Stages/Zone 2/level_2_1_3.tscn
