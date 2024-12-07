@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://be8xxr3r52523"]
+
+[ext_resource type="Texture2D" uid="uid://cnrbqr3ucdgy8" path="res://Utilities/TileMaps/Foreground/main_lev_build.png" id="1_kae76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxfr3"]
+size = Vector2(64, 16)
+
+[node name="StaticPlataform2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kae76")
+region_enabled = true
+region_rect = Rect2(224.25, 319.63, 63.4233, 16.5398)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_gxfr3")
+one_way_collision = true

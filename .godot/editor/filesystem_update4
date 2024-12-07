@@ -12,3 +12,7 @@ res://Stages/Zone 2/level_2_1.tscn
 res://Stages/Zone 2/level_2_1_1.tscn
 res://Stages/Zone 2/level_2_1_2.tscn
 res://Stages/Zone 2/level_2_1_3.tscn
+res://Entities/Plataforms/Static/static_platform.tscn
+res://Entities/Plataforms/Static/static_plataform2.tscn
+res://Entities/Player/player.tscn
+res://Entities/Player/Scripts/Player.gd

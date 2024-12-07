@@ -193,9 +193,9 @@ func double_jump():
 func crouch():
 	if is_crouching:
 		return
-	is_crouching = true
 	cshape.shape = crouching_cshape
 	cshape.position.y = -11
+	is_crouching = true
 
 func stand():
 	if is_crouching == false:
