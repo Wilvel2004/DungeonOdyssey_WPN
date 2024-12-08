@@ -7,6 +7,10 @@ func _ready():
 	Firebase.Auth.signup_succeeded.connect(on_signup_succeded)
 	Firebase.Auth.login_failed.connect(on_login_failed)
 	Firebase.Auth.signup_failed.connect(on_signup_failed)
+	
+	if Firebase.Auth.check_auth_file():
+		%StateLabel.text = "logged in"
+		get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -28,10 +32,14 @@ func _on_signup_button_pressed():
 func on_login_succeded(auth):
 	print(auth)
 	%StateLabel.text = "Log in success"
+	Firebase.Auth.save_auth(auth)
+	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 func on_signup_succeded(auth):
 	print(auth)
 	%StateLabel.text = "Sign up success"
+	Firebase.Auth.save_auth(auth)
+	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 func on_login_failed(error_code, message):
 	print(error_code)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4an4mt6njl5l"]
+[gd_scene load_steps=10 format=3 uid="uid://b4an4mt6njl5l"]
 
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/StartGameButton.gd" id="1_o4tlq"]
 [ext_resource type="FontFile" uid="uid://dntl7mecdsp4b" path="res://Assets/Fonts/CloisterBlack.ttf" id="1_w5du3"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/SettingsGameButton.gd" id="2_ow77f"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/QuitGameButton.gd" id="3_eds5a"]
+[ext_resource type="Script" path="res://Common/UI/Menu/Main menu/Logout.gd" id="4_05gxo"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Settings/Video.gd" id="4_fob8c"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Settings/Back.gd" id="5_tl4ep"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Settings/Audio.gd" id="6_yuajl"]
@@ -62,6 +63,14 @@ theme_override_fonts/font = ExtResource("1_w5du3")
 text = "Settings
 "
 script = ExtResource("2_ow77f")
+
+[node name="LogoutButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_w5du3")
+text = "Log out"
+script = ExtResource("4_05gxo")
 
 [node name="QuitGameButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
 layout_mode = 2
@@ -357,6 +366,7 @@ script = ExtResource("5_tl4ep")
 
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/StartGameButton" to="UI/MainMenu/ButtonVBox/StartGameButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/SettingsGameButton" to="UI/MainMenu/ButtonVBox/SettingsGameButton" method="_on_pressed"]
+[connection signal="pressed" from="UI/MainMenu/ButtonVBox/LogoutButton" to="UI/MainMenu/ButtonVBox/LogoutButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/QuitGameButton" to="UI/MainMenu/ButtonVBox/QuitGameButton" method="_on_pressed"]
 [connection signal="toggled" from="UI/Settings/Video/HBoxContainer/VBoxContainer2/FullScreen" to="UI/Settings/Video" method="_on_full_screen_toggled"]
 [connection signal="toggled" from="UI/Settings/Video/HBoxContainer/VBoxContainer2/Borderless" to="UI/Settings/Video" method="_on_borderless_toggled"]
