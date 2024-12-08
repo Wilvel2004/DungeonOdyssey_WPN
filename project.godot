@@ -21,12 +21,17 @@ config/icon="res://icon.svg"
 NavigationManager="*res://Common/Navegation/navigation_manager.gd"
 TransitionScreen="*res://Common/Transition/transition_screen.tscn"
 Persistence="*res://Common/UI/Menu/Settings/Persistence.gd"
+Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
 
 [display]
 
 window/size/viewport_width=482
 window/size/viewport_height=270
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg")
 
 [input]
 
