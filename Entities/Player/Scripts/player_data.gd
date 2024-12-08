@@ -6,7 +6,7 @@ const PLAYER_LIFE = 4
 static var max_life = PLAYER_LIFE
 
 static var coin = 0
-static var life = 4
+static var life = PLAYER_LIFE
 static var normal_attack_damage = 10
 static var heavy_attack_damage = 10
 
