@@ -9,8 +9,6 @@ func _ready():
 	if borderless_type == true:
 		%Borderless.button_pressed = true
  
- 
- 
 func _on_full_screen_toggled(toggled_on):
 	if toggled_on:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)

@@ -3,6 +3,10 @@ extends Node2D
 
 const PLAYER_LIFE = 4
 
+static var score = 0
+
+static var player_name : String
+
 static var max_life = PLAYER_LIFE
 
 static var coin = 0

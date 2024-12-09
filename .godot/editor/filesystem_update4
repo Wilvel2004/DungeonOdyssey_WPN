@@ -3,3 +3,12 @@ res://Utilities/TileMaps/default_tileset.tres
 res://Common/UI/Menu/LogIn/LogIn.tscn
 res://Common/UI/Menu/Main menu/LeaderboardButton.gd
 res://Common/UI/Menu/Leaderboard/Leaderboard.tscn
+res://Common/UI/Menu/Settings/Back.gd
+res://Entities/Player/Scripts/player_data.gd
+res://Common/UI/Menu/LogIn/Authentication.gd
+res://Common/UI/Menu/Settings/Persistence.gd
+res://Common/UI/Menu/Settings/Video.gd
+res://Common/UI/Menu/Pause Menu/pause_menu.gd
+res://Common/UI/Menu/Pause Menu/pause_menu.tscn
+res://Common/Navegation/dimensional_portal.tscn
+res://Common/Navegation/dimensional_portal.gd

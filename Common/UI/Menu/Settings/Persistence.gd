@@ -11,6 +11,7 @@ func _ready():
 	config.set_value("Video", "fullscreen", DisplayServer.WINDOW_MODE_WINDOWED)
 	config.set_value("Video", "borderless", false)
 	config.set_value("Video", "vsync", DisplayServer.VSYNC_ENABLED)
+	config.set_value("Player", "player_name", PlayerData.player_name)
  
 	for i in range(3):
 		config.set_value("Audio", str(i), 0.0)
@@ -44,3 +45,6 @@ func load_video_settings():
  
 	var borderless = config.get_value("Video","borderless")
 	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, borderless)
+
+func load_player_settings():
+	PlayerData.player_name = config.get_value("Player", "player_name")

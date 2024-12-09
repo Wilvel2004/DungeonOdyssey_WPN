@@ -10,11 +10,20 @@ func _ready():
 	
 	if Firebase.Auth.check_auth_file():
 		%StateLabel.text = "logged in"
+		Persistence.load_player_settings()
 		get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func extract_username(email: String) -> String:
+	var username = email.split("@")[0]
+	return username
+
+func save_player_name(email):
+	Persistence.config.set_value("Player", "player_name", email)
+	Persistence.save_data()
 
 func _on_login_button_pressed():
 	var email = %EmailLineEdit.text
@@ -30,14 +39,20 @@ func _on_signup_button_pressed():
 	%StateLabel.text = "Singing up"
 
 func on_login_succeded(auth):
-	print(auth)
+	#print(auth)
 	%StateLabel.text = "Log in success"
+	var email = %EmailLineEdit.text
+	PlayerData.player_name = extract_username(email)
+	save_player_name(email)
 	Firebase.Auth.save_auth(auth)
 	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 func on_signup_succeded(auth):
-	print(auth)
+	#print(auth)
 	%StateLabel.text = "Sign up success"
+	var email = %EmailLineEdit.text
+	PlayerData.player_name = extract_username(email)
+	save_player_name(email)
 	Firebase.Auth.save_auth(auth)
 	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 

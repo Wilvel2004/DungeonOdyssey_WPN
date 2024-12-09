@@ -2,7 +2,7 @@ extends Control
 
 @onready var ap = $AnimationPlayer
 
-const mainMenu = preload("res://Common/UI/Menu/Main menu/MainMenu.tscn")
+var mainMenu = load("res://Common/UI/Menu/Main menu/MainMenu.tscn")
 
 func _process(delta):
 	if Input.is_action_just_pressed("pause") and !get_tree().paused:
