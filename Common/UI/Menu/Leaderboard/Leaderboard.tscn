@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpbat7mcep6e2"]
+
+[ext_resource type="FontFile" uid="uid://dntl7mecdsp4b" path="res://Assets/Fonts/CloisterBlack.ttf" id="1_ob6j1"]
+[ext_resource type="PackedScene" uid="uid://dgygkbtm0burn" path="res://addons/quiver_leaderboards/leaderboard_ui.tscn" id="2_yai7m"]
+[ext_resource type="Script" path="res://Common/UI/Menu/Settings/Back.gd" id="3_bdawg"]
+
+[node name="Leaderboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.305882, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LeaderboardUI" parent="." instance=ExtResource("2_yai7m")]
+layout_mode = 1
+leaderboard_id = "dungeonodyssey-main-RzxA"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+offset_right = 45.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("1_ob6j1")
+text = "Back
+"
+script = ExtResource("3_bdawg")
+
+[connection signal="pressed" from="Back" to="Back" method="_on_pressed"]

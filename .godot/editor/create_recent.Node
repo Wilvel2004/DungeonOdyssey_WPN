@@ -1,8 +1,9 @@
 Button
+ScrollContainer
+CanvasLayer
 Control
 VBoxContainer
 LineEdit
-CanvasLayer
 Node2D
 CollisionShape2D
 StaticBody2D
@@ -11,4 +12,3 @@ AnimationPlayer
 CharacterBody2D
 RigidBody2D
 Area2D
-GPUParticles2D

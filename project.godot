@@ -22,6 +22,8 @@ NavigationManager="*res://Common/Navegation/navigation_manager.gd"
 TransitionScreen="*res://Common/Transition/transition_screen.tscn"
 Persistence="*res://Common/UI/Menu/Settings/Persistence.gd"
 Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
+Leaderboards="*res://addons/quiver_leaderboards/leaderboards.tscn"
+PlayerAccounts="*res://addons/quiver_player_accounts/player_accounts.tscn"
 
 [display]
 
@@ -31,7 +33,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg", "res://addons/quiver_leaderboards/plugin.cfg", "res://addons/quiver_player_accounts/plugin.cfg")
 
 [input]
 
@@ -92,6 +94,10 @@ pause={
 2d_physics/layer_2="Ground"
 2d_physics/layer_3="Sword"
 2d_physics/layer_4="Interactables"
+
+[quiver]
+
+general/auth_token="jSrQm76n7tnb6OS7HcfgFKHm7J2y5GwuclJJZpOK"
 
 [rendering]
 

@@ -61,10 +61,12 @@ secret = true
 
 [node name="LoginButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ir3xt")
 text = "Log in"
 
 [node name="SignupButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ir3xt")
 text = "Sign up"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/MainMenu"]

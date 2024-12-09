@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://b4an4mt6njl5l"]
+[gd_scene load_steps=11 format=3 uid="uid://b4an4mt6njl5l"]
 
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/StartGameButton.gd" id="1_o4tlq"]
 [ext_resource type="FontFile" uid="uid://dntl7mecdsp4b" path="res://Assets/Fonts/CloisterBlack.ttf" id="1_w5du3"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/SettingsGameButton.gd" id="2_ow77f"]
+[ext_resource type="Script" path="res://Common/UI/Menu/Main menu/LeaderboardButton.gd" id="3_7g8y8"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/QuitGameButton.gd" id="3_eds5a"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Main menu/Logout.gd" id="4_05gxo"]
 [ext_resource type="Script" path="res://Common/UI/Menu/Settings/Video.gd" id="4_fob8c"]
@@ -54,6 +55,14 @@ theme_override_fonts/font = ExtResource("1_w5du3")
 text = "Start
 "
 script = ExtResource("1_o4tlq")
+
+[node name="LeaderboardButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_w5du3")
+text = "Leaderboard"
+script = ExtResource("3_7g8y8")
 
 [node name="SettingsGameButton" type="Button" parent="UI/MainMenu/ButtonVBox"]
 layout_mode = 2
@@ -365,6 +374,7 @@ text = "Back
 script = ExtResource("5_tl4ep")
 
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/StartGameButton" to="UI/MainMenu/ButtonVBox/StartGameButton" method="_on_pressed"]
+[connection signal="pressed" from="UI/MainMenu/ButtonVBox/LeaderboardButton" to="UI/MainMenu/ButtonVBox/LeaderboardButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/SettingsGameButton" to="UI/MainMenu/ButtonVBox/SettingsGameButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/LogoutButton" to="UI/MainMenu/ButtonVBox/LogoutButton" method="_on_pressed"]
 [connection signal="pressed" from="UI/MainMenu/ButtonVBox/QuitGameButton" to="UI/MainMenu/ButtonVBox/QuitGameButton" method="_on_pressed"]

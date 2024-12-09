@@ -1,10 +1,5 @@
-res://Stages/Zone 2/level_2.tscn
-res://Utilities/TileMaps/default_tileset.tres
-res://Entities/Player/player.tscn
-res://Entities/Player/Scripts/player_data.gd
-res://Stages/Zone 1/level_1.tscn
-res://Stages/Zone 1/level_1_4.tscn
-res://Common/UI/Menu/LogIn/LogIn.tscn
-res://Common/UI/Menu/LogIn/Authentication.gd
 res://Common/UI/Menu/Main menu/MainMenu.tscn
-res://Common/UI/Menu/Main menu/Logout.gd
+res://Utilities/TileMaps/default_tileset.tres
+res://Common/UI/Menu/LogIn/LogIn.tscn
+res://Common/UI/Menu/Main menu/LeaderboardButton.gd
+res://Common/UI/Menu/Leaderboard/Leaderboard.tscn
