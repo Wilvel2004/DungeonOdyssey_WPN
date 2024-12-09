@@ -1,4 +1,8 @@
 extends Button
  
+@onready var settings = %Settings
+@onready var mainMenu = %MainMenu
+
 func _on_pressed():
-	print(PlayerData.player_name)
+	settings.hide()
+	mainMenu.show()

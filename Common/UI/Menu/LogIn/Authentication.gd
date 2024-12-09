@@ -22,7 +22,7 @@ func extract_username(email: String) -> String:
 	return username
 
 func save_player_name(email):
-	Persistence.config.set_value("Player", "player_name", email)
+	Persistence.config.set_value("Player", "player_name", extract_username(email))
 	Persistence.save_data()
 
 func _on_login_button_pressed():
@@ -42,7 +42,7 @@ func on_login_succeded(auth):
 	#print(auth)
 	%StateLabel.text = "Log in success"
 	var email = %EmailLineEdit.text
-	PlayerData.player_name = extract_username(email)
+	PlayerData.player_name = email
 	save_player_name(email)
 	Firebase.Auth.save_auth(auth)
 	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
@@ -51,7 +51,7 @@ func on_signup_succeded(auth):
 	#print(auth)
 	%StateLabel.text = "Sign up success"
 	var email = %EmailLineEdit.text
-	PlayerData.player_name = extract_username(email)
+	PlayerData.player_name = email
 	save_player_name(email)
 	Firebase.Auth.save_auth(auth)
 	get_tree().change_scene_to_file("res://Common/UI/Menu/Main menu/MainMenu.tscn")
