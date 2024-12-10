@@ -2,3 +2,8 @@ res://Common/UI/Menu/Leaderboard/Leaderboard.tscn
 res://Utilities/TileMaps/default_tileset.tres
 res://Common/Navegation/dimensional_portal.gd
 res://Common/UI/Menu/Leaderboard/Back2.gd
+res://Common/UI/Menu/LogIn/LogIn.tscn
+res://Common/UI/Menu/Main menu/MainMenu.tscn
+res://Common/Navegation/dimensional_portal.tscn
+res://Common/UI/Menu/Pause Menu/pause_menu.gd
+res://Common/UI/Menu/Pause Menu/pause_menu.tscn
