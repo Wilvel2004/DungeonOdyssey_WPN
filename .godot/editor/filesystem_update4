@@ -1,9 +1,4 @@
-res://Common/UI/Menu/LogIn/LogIn.tscn
-res://Utilities/TileMaps/default_tileset.tres
-res://Common/UI/Menu/LogIn/Authentication.gd
-res://Common/Navegation/door.tscn
-res://Common/Navegation/portal.gd
-res://Common/UI/Menu/Main menu/MainMenu.tscn
 res://Common/UI/Menu/Leaderboard/Leaderboard.tscn
-res://Common/Navegation/dimensional_portal.tscn
-res://Common/UI/Menu/Settings/Back.gd
+res://Utilities/TileMaps/default_tileset.tres
+res://Common/Navegation/dimensional_portal.gd
+res://Common/UI/Menu/Leaderboard/Back2.gd
