@@ -11,5 +11,6 @@ func _on_body_entered(body):
 	if body.name == "Player":
 		ap.play("destroyed")
 		PlayerData.coin += 1
+		PlayerData.score += 1
 		await ap.animation_finished
 		queue_free()

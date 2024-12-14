@@ -7,4 +7,5 @@ func enter():
 
 func transition():
 	if not animation_player.is_playing():
+		PlayerData.score += 25
 		owner.queue_free()

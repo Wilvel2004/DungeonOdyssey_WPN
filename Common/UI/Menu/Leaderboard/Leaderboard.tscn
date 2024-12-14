@@ -24,7 +24,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="LeaderboardUI" parent="." instance=ExtResource("2_yai7m")]
 layout_mode = 1
-leaderboard_id = "dungeonodyssey-main-eb71-main-RzxA"
+leaderboard_id = "dungeonodyssey-main-eb71"
 
 [node name="Back" type="Button" parent="."]
 layout_mode = 1

@@ -10,4 +10,5 @@ func enter():
 	block_door1.set_collision_mask_value(1,false)
 	block_door2.set_collision_layer_value(1,false)
 	block_door2.set_collision_mask_value(1,false)
+	PlayerData.score += 400
 	owner.queue_free()

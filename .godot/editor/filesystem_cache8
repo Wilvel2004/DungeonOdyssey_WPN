@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733843365
+::res://::1734195318
 default_bus_layout.tres::AudioBusLayout::17371807231564699::1731435630::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1733789958::0::1::::<><>::
 README.md::TextFile::-1::1731436631::0::1::::<><>::
-::res://addons/::1733778269
+::res://addons/::1733844040
 ::res://addons/godot-firebase/::1733695819
 icon.svg::CompressedTexture2D::1932520971276548949::1729353500::1733679976::1::::<><>::
 plugin.cfg::TextFile::-1::1729353500::0::1::::<><>::
@@ -63,18 +63,18 @@ remote_config.gd::GDScript::-1::1729353500::0::1::::RemoteConfig<>RefCounted<>::
 storage.gd::GDScript::-1::1729353500::0::1::::FirebaseStorage<>Node<>::
 storage_reference.gd::GDScript::-1::1729353500::0::1::::StorageReference<>Node<>::
 storage_task.gd::GDScript::-1::1729353500::0::1::::StorageTask<>RefCounted<>::
-::res://addons/quiver_leaderboards/::1733778230
-leaderboards.gd::GDScript::-1::1733778230::0::1::::<>Node<>::
-leaderboards.tscn::PackedScene::7882555745032724973::1733778230::0::1::::<><>::res://addons/quiver_leaderboards/leaderboards.gd
-leaderboard_ui.gd::GDScript::-1::1733778230::0::1::::LeaderboardUI<>Control<>::
-leaderboard_ui.tscn::PackedScene::7630322421353910391::1733778230::0::1::::<><>::res://addons/quiver_leaderboards/leaderboard_ui.gd
-plugin.cfg::TextFile::-1::1733778230::0::1::::<><>::
-plugin.gd::GDScript::-1::1733778230::0::1::::<>EditorPlugin<>::
-::res://addons/quiver_player_accounts/::1733778269
-player_accounts.gd::GDScript::-1::1733778269::0::1::::<>Node<>::
-player_accounts.tscn::PackedScene::2665504115330199153::1733778269::0::1::::<><>::res://addons/quiver_player_accounts/player_accounts.gd
-plugin.cfg::TextFile::-1::1733778269::0::1::::<><>::
-plugin.gd::GDScript::-1::1733778269::0::1::::<>EditorPlugin<>::
+::res://addons/quiver_leaderboards/::1733844032
+leaderboards.gd::GDScript::-1::1733844032::0::1::::<>Node<>::
+leaderboards.tscn::PackedScene::7882555745032724973::1733844032::0::1::::<><>::res://addons/quiver_leaderboards/leaderboards.gd
+leaderboard_ui.gd::GDScript::-1::1733844032::0::1::::LeaderboardUI<>Control<>::
+leaderboard_ui.tscn::PackedScene::7630322421353910391::1733844032::0::1::::<><>::res://addons/quiver_leaderboards/leaderboard_ui.gd
+plugin.cfg::TextFile::-1::1733844032::0::1::::<><>::
+plugin.gd::GDScript::-1::1733844032::0::1::::<>EditorPlugin<>::
+::res://addons/quiver_player_accounts/::1733844040
+player_accounts.gd::GDScript::-1::1733844040::0::1::::<>Node<>::
+player_accounts.tscn::PackedScene::2665504115330199153::1733844040::0::1::::<><>::res://addons/quiver_player_accounts/player_accounts.gd
+plugin.cfg::TextFile::-1::1733844040::0::1::::<><>::
+plugin.gd::GDScript::-1::1733844040::0::1::::<>EditorPlugin<>::
 ::res://Assets/::1733524232
 ::res://Assets/Credits/::1723288460
 ::res://Assets/Fonts/::1731436922
@@ -100,14 +100,14 @@ movement_component.tscn::PackedScene::5966035393567641646::1731435630::0::1::::<
 ::res://Common/Components Manager/Player Dectection/::1731435630
 PlayerDetectionComponent.gd::GDScript::-1::1731435630::0::1::::PlayerDetectionComponent<>Area2D<>::
 player_detection_component.tscn::PackedScene::7355980792078476103::1731435630::0::1::::<><>::res://Common/Components Manager/Player Dectection/PlayerDetectionComponent.gd
-::res://Common/Navegation/::1733790392
-dimensional_portal.gd::GDScript::-1::1733784560::0::1::::<>Door<>::
+::res://Common/Navegation/::1734116905
+dimensional_portal.gd::GDScript::-1::1733843617::0::1::::<>Door<>::
 Dimensional_Portal.png::CompressedTexture2D::5297362471515376138::1731435630::1731436922::1::::<><>::
-dimensional_portal.tscn::PackedScene::228611708081153786::1733790391::0::1::::<><>::res://Common/Navegation/dimensional_portal.gd<>uid://chqc1ytbklkte::::res://Common/Navegation/Dimensional_Portal.png
-door.tscn::PackedScene::4478757777846968219::1733789751::0::1::::<><>::res://Common/Navegation/portal.gd
+dimensional_portal.tscn::PackedScene::228611708081153786::1733844682::0::1::::<><>::res://Common/Navegation/dimensional_portal.gd<>uid://chqc1ytbklkte::::res://Common/Navegation/Dimensional_Portal.png
+door.tscn::PackedScene::4478757777846968219::1734116905::0::1::::<><>::res://Common/Navegation/portal.gd
 ext_door.tscn::PackedScene::2846598802681512656::1731435630::0::1::::<><>::res://Common/Navegation/portal.gd
 navigation_manager.gd::GDScript::-1::1731435678::0::1::::<>Node<>::
-portal.gd::GDScript::-1::1733790392::0::1::::Door<>Area2D<>::
+portal.gd::GDScript::-1::1733844636::0::1::::Door<>Area2D<>::
 ::res://Common/proyectiles/::1733524232
 ::res://Common/proyectiles/Fire ball/::1733523470
 fire_ball.gd::GDScript::-1::1731435630::0::1::::FireBall<>Area2D<>::
@@ -143,22 +143,23 @@ health meter-45.png::CompressedTexture2D::1332546449548505415::1731435630::17314
 ::res://Common/UI/Menu/Action button/::1731435630
 action_button.gd::GDScript::-1::1731435630::0::1::::<>Button<>::
 action_button.tscn::PackedScene::8085570962068202066::1731435630::0::1::::<><>::res://Common/UI/Menu/Action button/action_button.gd
-::res://Common/UI/Menu/Leaderboard/::1733789958
-Leaderboard.tscn::PackedScene::3441353345483538967::1733789958::0::1::::<><>::uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>uid://dgygkbtm0burn::::res://addons/quiver_leaderboards/leaderboard_ui.tscn
-::res://Common/UI/Menu/LogIn/::1733789751
+::res://Common/UI/Menu/Leaderboard/::1734116906
+Back2.gd::GDScript::-1::1733843617::0::1::::<>Button<>::
+Leaderboard.tscn::PackedScene::3441353345483538967::1734116906::0::1::::<><>::uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>uid://dgygkbtm0burn::::res://addons/quiver_leaderboards/leaderboard_ui.tscn<>res://Common/UI/Menu/Leaderboard/Back2.gd
+::res://Common/UI/Menu/LogIn/::1734116905
 Authentication.gd::GDScript::-1::1733786419::0::1::::<>Control<>::
-LogIn.tscn::PackedScene::717652269745462563::1733789751::0::1::::<><>::uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>res://Common/UI/Menu/LogIn/Authentication.gd
-::res://Common/UI/Menu/Main menu/::1733789958
+LogIn.tscn::PackedScene::717652269745462563::1734116905::0::1::::<><>::uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>res://Common/UI/Menu/LogIn/Authentication.gd
+::res://Common/UI/Menu/Main menu/::1734116905
 LeaderboardButton.gd::GDScript::-1::1733777580::0::1::::<>Button<>::
 Logout.gd::GDScript::-1::1733789958::0::1::::<>Button<>::
-MainMenu.tscn::PackedScene::4422738919182969835::1733789751::0::1::::<><>::res://Common/UI/Menu/Main menu/StartGameButton.gd<>uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>res://Common/UI/Menu/Main menu/SettingsGameButton.gd<>res://Common/UI/Menu/Main menu/LeaderboardButton.gd<>res://Common/UI/Menu/Main menu/QuitGameButton.gd<>res://Common/UI/Menu/Main menu/Logout.gd<>res://Common/UI/Menu/Settings/Video.gd<>res://Common/UI/Menu/Settings/Back.gd<>res://Common/UI/Menu/Settings/Audio.gd<>uid://dngyf4leq2k5w::::res://Common/UI/Menu/Action button/action_button.tscn
+MainMenu.tscn::PackedScene::4422738919182969835::1734116905::0::1::::<><>::res://Common/UI/Menu/Main menu/StartGameButton.gd<>uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf<>res://Common/UI/Menu/Main menu/SettingsGameButton.gd<>res://Common/UI/Menu/Main menu/LeaderboardButton.gd<>res://Common/UI/Menu/Main menu/QuitGameButton.gd<>res://Common/UI/Menu/Main menu/Logout.gd<>res://Common/UI/Menu/Settings/Video.gd<>res://Common/UI/Menu/Settings/Back.gd<>res://Common/UI/Menu/Settings/Audio.gd<>uid://dngyf4leq2k5w::::res://Common/UI/Menu/Action button/action_button.tscn
 QuitGameButton.gd::GDScript::-1::1731435630::0::1::::<>Button<>::
 SettingsGameButton.gd::GDScript::-1::1731435630::0::1::::<>Button<>::
 StartGameButton.gd::GDScript::-1::1731435630::0::1::::<>Button<>::
-::res://Common/UI/Menu/Pause Menu/::1733784207
-pause_menu.gd::GDScript::-1::1733784207::0::1::::<>Control<>::
+::res://Common/UI/Menu/Pause Menu/::1734116905
+pause_menu.gd::GDScript::-1::1733843875::0::1::::<>Control<>::
 pause_menu.gdshader::Shader::-1::1731435764::0::1::::<><>::
-pause_menu.tscn::PackedScene::8246223049955744858::1733784207::0::1::::<><>::res://Common/UI/Menu/Pause Menu/pause_menu.gd<>res://Common/UI/Menu/Pause Menu/pause_menu.gdshader<>uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf
+pause_menu.tscn::PackedScene::8246223049955744858::1734116905::0::1::::<><>::res://Common/UI/Menu/Pause Menu/pause_menu.gd<>res://Common/UI/Menu/Pause Menu/pause_menu.gdshader<>uid://dntl7mecdsp4b::::res://Assets/Fonts/CloisterBlack.ttf
 ::res://Common/UI/Menu/Settings/::1733786558
 Audio.gd::GDScript::-1::1731435630::0::1::::<>TabBar<>::
 Back.gd::GDScript::-1::1733786558::0::1::::<>Button<>::
@@ -274,9 +275,9 @@ moving_plataform.tscn::PackedScene::5052053824701424568::1733599858::0::1::::<><
 ::res://Entities/Plataforms/Static/::1733599858
 static_plataform2.tscn::PackedScene::2736739025187709698::1733599858::0::1::::<><>::uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png
 static_platform.tscn::PackedScene::7357521441746884385::1733599037::0::1::::<><>::uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png
-::res://Entities/Player/::1733762352
+::res://Entities/Player/::1734116906
 ghost.tscn::PackedScene::4495450667230187959::1731435630::0::1::::<><>::uid://1yci7uw50gr1::::res://Entities/Player/Assets/_Dash.png<>res://Entities/Player/Scripts/ghost.gd
-player.tscn::PackedScene::5742776838587482711::1733762352::0::1::::<><>::res://Entities/Player/Scripts/Player.gd<>uid://b5bvoesrfilgp::::res://Entities/Player/ghost.tscn<>uid://ntu11re3l717::::res://Entities/Player/Assets/_Idle.png<>uid://btnq1g6n0ur8b::::res://Utilities/Player cshape/player_standing_cshape.tres<>uid://cncnbderwtjm3::::res://Entities/Player/Assets/_CrouchTransition.png<>uid://cowtf2s3v8fss::::res://Entities/Player/Assets/_CrouchWalk.png<>uid://1yci7uw50gr1::::res://Entities/Player/Assets/_Dash.png<>uid://dplhkubhjqmr8::::res://Entities/Player/Assets/_Death.png<>uid://p3m2oc7lvm4j::::res://Entities/Player/Assets/_Fall.png<>uid://d4dek8v18n12m::::res://Entities/Player/Assets/_AttackNoMovement.png<>uid://csfdsy880g65i::::res://Entities/Player/Assets/_Hit.png<>uid://bfsckir6dbd0k::::res://Entities/Player/Assets/_Jump.png<>uid://b10061sha3tlv::::res://Entities/Player/Assets/_Attack2.png<>uid://bsmbolduk0jab::::res://Entities/Player/Assets/_Run.png<>res://Entities/Player/Scripts/parry.gd<>uid://biv5rm6yolsh6::::res://Entities/Camera/camera2D.tscn<>uid://douuimyh3bre4::::res://Common/UI/Player/gui.tscn
+player.tscn::PackedScene::5742776838587482711::1734116906::0::1::::<><>::res://Entities/Player/Scripts/Player.gd<>uid://b5bvoesrfilgp::::res://Entities/Player/ghost.tscn<>uid://ntu11re3l717::::res://Entities/Player/Assets/_Idle.png<>uid://btnq1g6n0ur8b::::res://Utilities/Player cshape/player_standing_cshape.tres<>uid://cncnbderwtjm3::::res://Entities/Player/Assets/_CrouchTransition.png<>uid://cowtf2s3v8fss::::res://Entities/Player/Assets/_CrouchWalk.png<>uid://1yci7uw50gr1::::res://Entities/Player/Assets/_Dash.png<>uid://dplhkubhjqmr8::::res://Entities/Player/Assets/_Death.png<>uid://p3m2oc7lvm4j::::res://Entities/Player/Assets/_Fall.png<>uid://d4dek8v18n12m::::res://Entities/Player/Assets/_AttackNoMovement.png<>uid://csfdsy880g65i::::res://Entities/Player/Assets/_Hit.png<>uid://bfsckir6dbd0k::::res://Entities/Player/Assets/_Jump.png<>uid://b10061sha3tlv::::res://Entities/Player/Assets/_Attack2.png<>uid://bsmbolduk0jab::::res://Entities/Player/Assets/_Run.png<>res://Entities/Player/Scripts/parry.gd<>uid://biv5rm6yolsh6::::res://Entities/Camera/camera2D.tscn<>uid://douuimyh3bre4::::res://Common/UI/Player/gui.tscn
 ::res://Entities/Player/Assets/::1731436922
 _Attack2.png::CompressedTexture2D::4264514740296404887::1731435630::1731436922::1::::<><>::
 _Attack2NoMovement.png::CompressedTexture2D::8490858336482396890::1731435630::1731436922::1::::<><>::
@@ -308,12 +309,12 @@ _WallClimb.png::CompressedTexture2D::1332967485066456052::1731435630::1731436922
 _WallClimbNoMovement.png::CompressedTexture2D::238768614306164333::1731435630::1731436922::1::::<><>::
 _WallHang.png::CompressedTexture2D::4374609945486158621::1731435630::1731436922::1::::<><>::
 _WallSlide.png::CompressedTexture2D::2904895167630399113::1731435630::1731436922::1::::<><>::
-::res://Entities/Player/Scripts/::1733789953
+::res://Entities/Player/Scripts/::1733844680
 Dash.gd::GDScript::-1::1731435630::0::1::::<>Node2D<>::
 ghost.gd::GDScript::-1::1731435630::0::1::::<>Sprite2D<>::
 parry.gd::GDScript::-1::1731435630::0::1::::<>Area2D<>::
 Player.gd::GDScript::-1::1733599858::0::1::::Player<>CharacterBody2D<>::
-player_data.gd::GDScript::-1::1733789953::0::1::::PlayerData<>Node2D<>::
+player_data.gd::GDScript::-1::1733844680::0::1::::PlayerData<>Node2D<>::
 ::res://Entities/Trap/::1731435630
 spike.tscn::PackedScene::7440676646095245208::1731435630::0::1::::<><>::uid://civovct7m65nv::::res://Utilities/TileMaps/default_tileset.tres
 spike_reverse.tscn::PackedScene::6220500679077821418::1731435630::0::1::::<><>::uid://civovct7m65nv::::res://Utilities/TileMaps/default_tileset.tres
@@ -339,8 +340,8 @@ level_2_2_1.tscn::PackedScene::5483702349097257762::1731435630::0::1::::<><>::ui
 ::res://Utilities/Player cshape/::1731435630
 player_crouching_cshape.tres::RectangleShape2D::2720783303349373880::1731435630::0::1::::<><>::
 player_standing_cshape.tres::RectangleShape2D::3747863889798197687::1731435630::0::1::::<><>::
-::res://Utilities/TileMaps/::1733790392
-default_tileset.tres::TileSet::5378591724765657151::1733790392::0::1::::<><>::uid://80oj4cb7u6g0::::res://Utilities/TileMaps/Foreground/Tileset_forest.png<>uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png<>uid://pp1qs2e1ljdd::::res://Utilities/TileMaps/Foreground/Trees.png<>uid://dw0c1y2tmk322::::res://Utilities/TileMaps/Foreground/other_and_decorative.png
+::res://Utilities/TileMaps/::1734116905
+default_tileset.tres::TileSet::5378591724765657151::1734116905::0::1::::<><>::uid://80oj4cb7u6g0::::res://Utilities/TileMaps/Foreground/Tileset_forest.png<>uid://cnrbqr3ucdgy8::::res://Utilities/TileMaps/Foreground/main_lev_build.png<>uid://pp1qs2e1ljdd::::res://Utilities/TileMaps/Foreground/Trees.png<>uid://dw0c1y2tmk322::::res://Utilities/TileMaps/Foreground/other_and_decorative.png
 tile_map.tscn::PackedScene::1810967979090261498::1731435630::0::1::::<><>::uid://civovct7m65nv::::res://Utilities/TileMaps/default_tileset.tres
 ::res://Utilities/TileMaps/Background/::1731436922
 background.tscn::PackedScene::290754529012938674::1731435630::0::1::::<><>::uid://be1l1akna6dxk::::res://Utilities/TileMaps/Background/CloudsBack.png<>uid://cqaj5uyvr5vbh::::res://Utilities/TileMaps/Background/CloudsFront.png<>uid://d4kjdm4oho741::::res://Utilities/TileMaps/Background/BGBack.png<>uid://4xp6glf3ss0e::::res://Utilities/TileMaps/Background/BGFront.png
