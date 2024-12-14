@@ -4,10 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="1_rpdrn"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="2_3jtf8"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="3_pm8mr"]
-[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/ext_door.tscn" id="4_ll3cc"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="6_6cirv"]
+[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="4_ll3cc"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="6_6cirv"]
 [ext_resource type="PackedScene" uid="uid://bfovx5c7rnow2" path="res://Entities/Enemies/Fire worm/fire_worm.tscn" id="7_r8ort"]
 [ext_resource type="PackedScene" uid="uid://cd0em0ab4eqxe" path="res://Entities/Enemies/Human MA/human_martial_arts.tscn" id="8_n4l4d"]
+
 
 [node name="Level_2_1" type="Node2D"]
 script = ExtResource("1_00bjj")

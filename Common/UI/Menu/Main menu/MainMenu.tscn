@@ -22,7 +22,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.305882, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="MainMenu" type="VBoxContainer" parent="UI"]
 unique_name_in_owner = true
@@ -32,7 +31,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="DungeonOdyssey" type="Label" parent="UI/MainMenu"]
 layout_mode = 2

@@ -4,7 +4,8 @@
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_ldejk"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="2_6ndy8"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="3_2k2ak"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="4_c85gk"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="4_c85gk"]
+
 
 [node name="Level_2_1_1" type="Node2D"]
 script = ExtResource("1_ldejk")

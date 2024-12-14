@@ -6,9 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://deak4e86yj53a" path="res://Entities/Trap/spike.tscn" id="4_hye22"]
 [ext_resource type="PackedScene" uid="uid://cuvi0cnd5knda" path="res://Entities/Trap/spike_reverse.tscn" id="5_5agum"]
 [ext_resource type="PackedScene" uid="uid://dc3bkkq5ynign" path="res://Entities/Plataforms/Static/static_platform.tscn" id="6_egj7k"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="7_38q30"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="7_38q30"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="8_pl7ti"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="9_1821a"]
+
 
 [node name="level_1_5" type="Node2D"]
 script = ExtResource("1_6w8wx")

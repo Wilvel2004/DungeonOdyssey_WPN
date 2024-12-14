@@ -8,3 +8,14 @@ res://Entities/Bosses/Necromancer/necromancer.tscn
 res://Entities/Bosses/Necromancer/State Machine/Death.gd
 res://Entities/Bosses/Golem/Golem.tscn
 res://Entities/Bosses/Golem/States/Death.gd
+res://Common/Navegation/portal.gd
+res://Common/Navegation/final_portal.tscn
+res://Common/Navegation/final_portal.gd
+res://Common/Navegation/dimensional_portal.tscn
+res://Common/Navegation/dimensional_portal.gd
+res://Common/UI/Final/FinalScreen.tscn
+res://Common/UI/Menu/Leaderboard/Back2.gd
+res://Common/UI/Menu/Main menu/QuitGameButton.gd
+res://Common/Navegation/Portal/final_portal.tscn
+res://Common/UI/Menu/Main menu/MainMenu.tscn
+res://Common/UI/Menu/Pause Menu/pause_menu.tscn

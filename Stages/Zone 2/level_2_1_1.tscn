@@ -4,10 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="1_kcmtw"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="2_b3l37"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="3_du2an"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="4_0erho"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="4_0erho"]
 [ext_resource type="PackedScene" uid="uid://dtb30qdt4ho52" path="res://Entities/Objects/Coin/coin.tscn" id="6_tm2tv"]
 [ext_resource type="PackedScene" uid="uid://43ek08iv81xi" path="res://Entities/Objects/Life/life.tscn" id="7_teev3"]
 [ext_resource type="PackedScene" uid="uid://dc3bkkq5ynign" path="res://Entities/Plataforms/Static/static_platform.tscn" id="8_eicgw"]
+
 
 [node name="Level_2_1_1" type="Node2D"]
 script = ExtResource("1_exa20")

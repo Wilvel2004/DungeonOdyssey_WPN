@@ -3,10 +3,11 @@
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_0g78p"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_j2dhp"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="3_gboa3"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="4_5c7pv"]
-[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/ext_door.tscn" id="5_fi2xr"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="4_5c7pv"]
+[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="5_fi2xr"]
 [ext_resource type="PackedScene" uid="uid://43ek08iv81xi" path="res://Entities/Objects/Life/life.tscn" id="6_pk51h"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="7_nr3dq"]
+
 
 [node name="level_1_3" type="Node2D"]
 script = ExtResource("1_0g78p")

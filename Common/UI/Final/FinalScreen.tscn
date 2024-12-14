@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://xdkdgxm23ba"]
+
+[ext_resource type="FontFile" uid="uid://dntl7mecdsp4b" path="res://Assets/Fonts/CloisterBlack.ttf" id="1_t0vaw"]
+[ext_resource type="Script" path="res://Common/UI/Menu/Leaderboard/Back2.gd" id="2_ga701"]
+[ext_resource type="Script" path="res://Common/UI/Menu/Main menu/QuitGameButton.gd" id="3_0hgms"]
+
+[node name="FinalScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.305882, 0, 0, 1)
+
+[node name="MainMenu" type="VBoxContainer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="DungeonOdyssey" type="Label" parent="UI/MainMenu"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_t0vaw")
+theme_override_font_sizes/font_size = 24
+text = "Thank you for play
+Dungeon Odyssey!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="UI/MainMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_t0vaw")
+text = "Main menu"
+script = ExtResource("2_ga701")
+
+[node name="QuitButton" type="Button" parent="UI/MainMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_t0vaw")
+text = "Quit"
+script = ExtResource("3_0hgms")
+
+[node name="ButtonVBox" type="VBoxContainer" parent="UI/MainMenu"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MainMenu/ButtonVBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="HighSchool" type="Label" parent="UI/MainMenu/ButtonVBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_fonts/font = ExtResource("1_t0vaw")
+text = "Ies Pere Maria"
+
+[node name="Author" type="Label" parent="UI/MainMenu/ButtonVBox/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource("1_t0vaw")
+text = "WPN 2ºDAM"
+
+[connection signal="pressed" from="UI/MainMenu/MainMenuButton" to="UI/MainMenu/MainMenuButton" method="_on_pressed"]
+[connection signal="pressed" from="UI/MainMenu/QuitButton" to="UI/MainMenu/QuitButton" method="_on_pressed"]

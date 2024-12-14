@@ -4,13 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_pnl44"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="3_8nqqr"]
 [ext_resource type="PackedScene" uid="uid://dtb30qdt4ho52" path="res://Entities/Objects/Coin/coin.tscn" id="4_atmu5"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="5_flxu5"]
-[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/ext_door.tscn" id="6_5fwcl"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="5_flxu5"]
+[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="6_5fwcl"]
 [ext_resource type="PackedScene" uid="uid://deak4e86yj53a" path="res://Entities/Trap/spike.tscn" id="7_y5d8w"]
 [ext_resource type="PackedScene" uid="uid://be8xxr3r52523" path="res://Entities/Plataforms/Static/static_plataform2.tscn" id="8_ku8ex"]
 [ext_resource type="PackedScene" uid="uid://bpik7q13mdeny" path="res://Entities/Objects/Rune/rune_double_jump.tscn" id="10_duicm"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="11_dewph"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="12_4endo"]
+
 
 [node name="Level_1_2" type="Node2D"]
 script = ExtResource("1_wew0b")

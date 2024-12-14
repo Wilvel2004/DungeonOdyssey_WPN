@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_gsogs"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="3_j48f7"]
 [ext_resource type="PackedScene" uid="uid://cf2odncnku1mw" path="res://Entities/Bosses/Necromancer/necromancer.tscn" id="4_w4tgp"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="5_0x2v8"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="5_0x2v8"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="6_h0qea"]
 [ext_resource type="Texture2D" uid="uid://deyihhp88jkqq" path="res://Assets/VFX/Flame.png" id="7_yolhf"]
 

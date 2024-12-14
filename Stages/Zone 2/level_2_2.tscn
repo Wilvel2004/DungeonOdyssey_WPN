@@ -4,11 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="1_id8cr"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="2_quoy7"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="3_g30xs"]
-[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/ext_door.tscn" id="4_8y216"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/door.tscn" id="5_0fa54"]
+[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="4_8y216"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="5_0fa54"]
 [ext_resource type="PackedScene" uid="uid://t60m7yp3hns" path="res://Entities/Bosses/Golem/Golem.tscn" id="7_nq4mb"]
 [ext_resource type="Texture2D" uid="uid://deyihhp88jkqq" path="res://Assets/VFX/Flame.png" id="8_ns1xo"]
 [ext_resource type="PackedScene" uid="uid://dc3bkkq5ynign" path="res://Entities/Plataforms/Static/static_platform.tscn" id="9_08obi"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g3h0x"]
 size = Vector2(78.75, 62.5)
