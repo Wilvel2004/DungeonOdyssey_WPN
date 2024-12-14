@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_thkra"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_ji60a"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="3_f4a61"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="3_ijv2c"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="4_ykp2c"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="5_y1nvc"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="6_vl713"]
@@ -19,7 +19,7 @@ layer_3/tile_data = PackedInt32Array(-458746, 5505025, 29, -393210, 5505025, 29,
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_W" parent="Doors" instance=ExtResource("3_f4a61")]
+[node name="Door_W" parent="Doors" instance=ExtResource("3_ijv2c")]
 position = Vector2(726, -30)
 destination_level_tag = "level_1_1"
 destination_door_tag = "E"

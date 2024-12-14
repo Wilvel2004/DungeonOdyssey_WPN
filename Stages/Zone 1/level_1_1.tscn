@@ -2,12 +2,11 @@
 
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_xcx1u"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_gkx0r"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="3_6gegy"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="3_qviuu"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="4_ngln0"]
 [ext_resource type="PackedScene" uid="uid://dt85jpnul5xnn" path="res://Entities/Enemies/Skeleton/skeleton.tscn" id="5_pqa6v"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="6_7xr4x"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="7_1gt30"]
-
 
 [node name="level_1_1" type="Node2D"]
 script = ExtResource("1_xcx1u")
@@ -22,7 +21,7 @@ layer_4/tile_data = PackedInt32Array(-655430, 917505, 21, -589894, 917505, 21, -
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_E" parent="Doors" instance=ExtResource("3_6gegy")]
+[node name="Door_E" parent="Doors" instance=ExtResource("3_qviuu")]
 position = Vector2(-38, -19)
 destination_level_tag = "level_1"
 destination_door_tag = "W"
@@ -34,7 +33,7 @@ position = Vector2(1, 1)
 [node name="Spawn" parent="Doors/Door_E" index="1"]
 position = Vector2(40, 20)
 
-[node name="Door_W" parent="Doors" instance=ExtResource("3_6gegy")]
+[node name="Door_W" parent="Doors" instance=ExtResource("3_qviuu")]
 destination_level_tag = "level_1_2"
 destination_door_tag = "E"
 spawn_direction = "right"

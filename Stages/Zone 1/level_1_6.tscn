@@ -3,11 +3,10 @@
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_nwyf7"]
 [ext_resource type="PackedScene" uid="uid://02im4ac7brwc" path="res://Utilities/TileMaps/tile_map.tscn" id="2_y0o30"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="3_buh6v"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="4_ybbwq"]
-[ext_resource type="PackedScene" uid="uid://di0g34cf8fao" path="res://Common/Navegation/Portal/dimensional_portal.tscn" id="5_rv5w3"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="4_1hmhf"]
+[ext_resource type="PackedScene" uid="uid://di0g34cf8fao" path="res://Common/Navegation/Portal/dimensional_portal.tscn" id="5_ihgif"]
 [ext_resource type="PackedScene" uid="uid://cd0em0ab4eqxe" path="res://Entities/Enemies/Human MA/human_martial_arts.tscn" id="6_dci5s"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="7_81teo"]
-
 
 [node name="level_1_6" type="Node2D"]
 position = Vector2(-19, 0)
@@ -31,7 +30,7 @@ limit_bottom = 45
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_E" parent="Doors" instance=ExtResource("4_ybbwq")]
+[node name="Door_E" parent="Doors" instance=ExtResource("4_1hmhf")]
 position = Vector2(10, -23)
 destination_level_tag = "level_1_5"
 destination_door_tag = "W"
@@ -43,7 +42,7 @@ position = Vector2(1, 1)
 [node name="Spawn" parent="Doors/Door_E" index="1"]
 position = Vector2(40, 20)
 
-[node name="Door_W" parent="Doors" instance=ExtResource("5_rv5w3")]
+[node name="Door_W" parent="Doors" instance=ExtResource("5_ihgif")]
 position = Vector2(296, -176)
 destination_level_tag = "level_2"
 destination_door_tag = "E"

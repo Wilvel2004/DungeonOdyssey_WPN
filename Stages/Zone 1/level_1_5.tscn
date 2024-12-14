@@ -6,10 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://deak4e86yj53a" path="res://Entities/Trap/spike.tscn" id="4_hye22"]
 [ext_resource type="PackedScene" uid="uid://cuvi0cnd5knda" path="res://Entities/Trap/spike_reverse.tscn" id="5_5agum"]
 [ext_resource type="PackedScene" uid="uid://dc3bkkq5ynign" path="res://Entities/Plataforms/Static/static_platform.tscn" id="6_egj7k"]
-[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="7_38q30"]
+[ext_resource type="PackedScene" uid="uid://b42sqsdovegl4" path="res://Common/Navegation/Door/door.tscn" id="7_ihc42"]
 [ext_resource type="PackedScene" uid="uid://cfm18biaic6rd" path="res://Common/UI/Advice/advice.tscn" id="8_pl7ti"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="9_1821a"]
-
 
 [node name="level_1_5" type="Node2D"]
 script = ExtResource("1_6w8wx")
@@ -533,7 +532,7 @@ position = Vector2(983, -24)
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_E" parent="Doors" instance=ExtResource("7_38q30")]
+[node name="Door_E" parent="Doors" instance=ExtResource("7_ihc42")]
 position = Vector2(5, -32)
 destination_level_tag = "level_1_4"
 destination_door_tag = "W"
@@ -545,7 +544,7 @@ position = Vector2(1, 1)
 [node name="Spawn" parent="Doors/Door_E" index="1"]
 position = Vector2(40, 20)
 
-[node name="Door_W" parent="Doors" instance=ExtResource("7_38q30")]
+[node name="Door_W" parent="Doors" instance=ExtResource("7_ihc42")]
 position = Vector2(253, -13)
 destination_level_tag = "level_1_6"
 destination_door_tag = "E"

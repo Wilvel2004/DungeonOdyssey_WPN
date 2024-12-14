@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D
 @onready var progress_bar = $UI/HealthBar
 @onready var vfx = $VFX
+@onready var playerdetection = $PlayerDetection
  
 var direction : Vector2
  
@@ -17,6 +18,10 @@ var health = 200:
 			progress_bar.visible = false
 			find_child("FiniteStateMachine").change_state("Death")
  
+func _ready():
+	if PlayerData.necromancer_slain:
+		visible = false
+		playerdetection.monitoring = false
  
 func _process(_delta):
 	player = PlayerData.playerBody

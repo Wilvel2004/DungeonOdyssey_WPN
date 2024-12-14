@@ -135,3 +135,5 @@ vframes = 2
 libraries = {
 "": SubResource("AnimationLibrary_l30ya")
 }
+
+[connection signal="body_entered" from="." to="." method="_on_Portal_body_entered"]

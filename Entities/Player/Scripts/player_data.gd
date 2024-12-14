@@ -25,3 +25,6 @@ static var playerHitbox : Area2D
 
 static var has_doublejump : bool = false
 static var has_dash : bool = false 
+
+static var necromancer_slain : bool = false
+static var golem_slain : bool = false

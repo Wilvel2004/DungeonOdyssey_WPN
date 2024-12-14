@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://Stages/level.gd" id="1_jas63"]
 [ext_resource type="PackedScene" uid="uid://cn23xv88qihmd" path="res://Entities/Player/player.tscn" id="2_mh5sd"]
 [ext_resource type="PackedScene" uid="uid://dc3bkkq5ynign" path="res://Entities/Plataforms/Static/static_platform.tscn" id="4_7fqfu"]
-[ext_resource type="PackedScene" uid="uid://di0g34cf8fao" path="res://Common/Navegation/Portal/dimensional_portal.tscn" id="5_j8cst"]
-[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="5_tk21j"]
+[ext_resource type="PackedScene" uid="uid://di0g34cf8fao" path="res://Common/Navegation/Portal/dimensional_portal.tscn" id="4_puxkv"]
+[ext_resource type="PackedScene" uid="uid://bgs6ci0jf17ge" path="res://Common/Navegation/Door/ext_door.tscn" id="5_mtusr"]
 [ext_resource type="PackedScene" uid="uid://dpqsdax7d1tnu" path="res://Common/UI/Menu/Pause Menu/pause_menu.tscn" id="7_l1n6l"]
 [ext_resource type="PackedScene" uid="uid://bfovx5c7rnow2" path="res://Entities/Enemies/Fire worm/fire_worm.tscn" id="8_brsbh"]
 
@@ -23,7 +23,7 @@ position = Vector2(952, -24)
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_E" parent="Doors" instance=ExtResource("5_j8cst")]
+[node name="Door_E" parent="Doors" instance=ExtResource("4_puxkv")]
 visible = false
 position = Vector2(944, -200)
 destination_level_tag = "level_1_6"
@@ -38,7 +38,7 @@ position = Vector2(2.66667, 58.6667)
 [node name="Sprite2D" parent="Doors/Door_E" index="2"]
 position = Vector2(-64, 18.6667)
 
-[node name="Door_W" parent="Doors" instance=ExtResource("5_tk21j")]
+[node name="Door_W" parent="Doors" instance=ExtResource("5_mtusr")]
 position = Vector2(152, 80)
 destination_level_tag = "level_2_1"
 destination_door_tag = "W"
@@ -46,7 +46,7 @@ destination_door_tag = "W"
 [node name="Spawn" parent="Doors/Door_W" index="1"]
 position = Vector2(200, -104)
 
-[node name="Door_O" parent="Doors" instance=ExtResource("5_tk21j")]
+[node name="Door_O" parent="Doors" instance=ExtResource("5_mtusr")]
 position = Vector2(1672, 80)
 destination_level_tag = "level_2_2"
 destination_door_tag = "W"
@@ -130,6 +130,8 @@ position = Vector2(192, -32)
 
 [node name="FireWorm2" parent="." instance=ExtResource("8_brsbh")]
 position = Vector2(1848, -32)
+
+[node name="UIPauseMenu2" parent="." instance=ExtResource("7_l1n6l")]
 
 [editable path="Doors/Door_E"]
 [editable path="Doors/Door_W"]

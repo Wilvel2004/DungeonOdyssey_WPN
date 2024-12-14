@@ -26,5 +26,5 @@ func enter():
 	block_door2.set_collision_mask_value(1,false)
 	
 	PlayerData.score += 250
-	
+	PlayerData.necromancer_slain = true
 	owner.queue_free()

@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var progress_bar = $UI/HealthBar
 @onready var vfx = $VFX
 @onready var dealdamage = $GolemDealDamage/CollisionShape2D 
+@onready var playerdetection = $PlayerDetection
 
 var direction : Vector2
 var DEF = 0
@@ -23,7 +24,10 @@ var health = 200:
 			find_child("FiniteStateMachine").change_state("ArmorBuff") 
 
 func _ready():
-	set_physics_process(false) 
+	set_physics_process(false)
+	if PlayerData.golem_slain:
+		visible = false
+		playerdetection.monitoring = false 
  
 func _process(_delta):
 	player = PlayerData.playerBody
